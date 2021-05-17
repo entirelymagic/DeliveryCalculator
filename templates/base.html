@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{% block title %}
-  {% endblock %}</title>
+  <title>{% block title %} {% endblock %}</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+  
 </head>
 <body>
   {% block content %}
-  {% endblock content %}
+  {% endblock %}
 </body>
 </html>
